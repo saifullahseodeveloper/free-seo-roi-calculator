@@ -1,379 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="fbvrG7qzBSXerap3UQ-sjl6Xd3mtwt3YcpSF_fHZuUk">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ═══ PRIMARY SEO: SEED KEYWORDS ═══ -->
   <title>Free SEO ROI & Revenue Calculator 2026 | Mohammad Saifullah</title>
-  <meta name="description" content="Calculate your projected revenue growth, ROI, and pipeline value from ranking on Page 1 of Google with our free interactive SEO ROI Calculator by Mohammad Saifullah.">
-  <meta name="keywords" content="SEO ROI calculator, organic search revenue calculator, SEO return on investment tool, free SEO value calculator India, SEO traffic calculator">
+  <meta name="description" content="Calculate your projected revenue growth, ROI, and pipeline value from ranking on Page 1 of Google. Free interactive SEO ROI Calculator by Mohammad Saifullah.">
+  <meta name="keywords" content="SEO ROI calculator, organic search revenue calculator, SEO return on investment, free SEO value calculator, SEO traffic calculator, free online tools">
   <meta name="author" content="Mohammad Saifullah">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://mohammad-saifullah.techerics.com/tools/seo-roi-calculator.html">
-
-  <!-- Open Graph -->
+  <link rel="canonical" href="https://saifullahseodeveloper.github.io/free-seo-roi-calculator/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mohammad-saifullah.techerics.com/tools/seo-roi-calculator.html">
+  <meta property="og:url" content="https://saifullahseodeveloper.github.io/free-seo-roi-calculator/">
   <meta property="og:title" content="Free SEO ROI & Revenue Calculator | Mohammad Saifullah">
   <meta property="og:description" content="Calculate the exact revenue impact of ranking on Google Page 1. Free interactive SEO tool.">
-  <meta property="og:image" content="https://mohammad-saifullah.techerics.com/assets/images/og-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://mohammad-saifullah.techerics.com/tools/seo-roi-calculator.html#app",
-        "name": "SEO ROI & Revenue Growth Calculator",
-        "url": "https://mohammad-saifullah.techerics.com/tools/seo-roi-calculator.html",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "All",
-        "browserRequirements": "Requires JavaScript",
-        "creator": { "@type": "Person", "name": "Mohammad Saifullah", "url": "https://mohammad-saifullah.techerics.com/" },
-        "description": "Free interactive calculator to estimate organic search traffic growth, lead volume, and ROI from ranking on Google Page 1."
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohammad-saifullah.techerics.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://mohammad-saifullah.techerics.com/tools/" },
-          { "@type": "ListItem", "position": 3, "name": "SEO ROI Calculator", "item": "https://mohammad-saifullah.techerics.com/tools/seo-roi-calculator.html" }
-        ]
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@type":"WebApplication","name":"SEO ROI & Revenue Growth Calculator","url":"https://saifullahseodeveloper.github.io/free-seo-roi-calculator/","applicationCategory":"BusinessApplication","operatingSystem":"All","creator":{"@type":"Person","name":"Mohammad Saifullah","url":"https://mohammad-saifullah.techerics.com/"},"description":"Free interactive calculator to estimate organic search traffic growth, lead volume, and ROI from ranking on Google Page 1.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
   </script>
-
   <style>
-    .tool-hero{padding:160px 0 60px;text-align:center}
-    .tool-hero .section-tag{display:inline-block;margin-bottom:20px}
-    .tool-hero h1{font-family:var(--font-display);font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:16px}
-    .tool-hero p{font-size:1.15rem;color:var(--text-secondary);max-width:700px;margin:0 auto 32px;line-height:1.7}
-    .breadcrumb{font-family:var(--font-mono);font-size:.82rem;color:var(--text-muted);margin-bottom:28px}
-    .breadcrumb a{color:var(--cyan-accent);text-decoration:none}
-    
-    .calc-container{max-width:1000px;margin:0 auto 80px;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:40px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
-    .calc-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px}
-    @media (max-width:850px){.calc-grid{grid-template-columns:1fr}}
-    
-    .calc-input-group{margin-bottom:24px}
-    .calc-label{display:flex;justify-content:space-between;font-weight:600;color:#fff;font-size:.95rem;margin-bottom:8px}
-    .calc-label span{color:var(--cyan-accent);font-family:var(--font-mono)}
-    .calc-slider{width:100%;height:8px;border-radius:4px;background:#1e293b;outline:none;-webkit-appearance:none;accent-color:var(--cyan-accent)}
-    .calc-slider::-webkit-slider-thumb{width:20px;height:20px;border-radius:50%;background:var(--cyan-accent);cursor:pointer}
-    .calc-input{width:100%;background:#090d16;border:1px solid var(--border-subtle);border-radius:8px;padding:12px 16px;color:#fff;font-size:1rem;font-family:var(--font-mono)}
-    .calc-input:focus{outline:none;border-color:var(--cyan-accent)}
-    
-    .results-card{background:linear-gradient(135deg,rgba(37,99,235,.15),rgba(0,240,255,.08));border:1px solid rgba(0,240,255,.3);border-radius:var(--radius-lg);padding:32px;display:flex;flex-direction:column;justify-content:space-between}
-    .result-row{margin-bottom:20px}
-    .result-label{font-size:.82rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-    .result-value{font-family:var(--font-display);font-size:2.2rem;font-weight:800;background:var(--gradient-cyan);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-    .result-sub{font-size:.85rem;color:#94a3b8;margin-top:2px}
-    
-    .metric-pills{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
-    .metric-pill{background:rgba(255,255,255,.03);border:1px solid var(--border-subtle);padding:14px;border-radius:8px;text-align:center}
-    .metric-pill-val{font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:#fff}
-    .metric-pill-lbl{font-size:.72rem;color:var(--text-muted);margin-top:2px}
-    
-    .content-box{max-width:880px;margin:0 auto 80px}
-    .content-box h2{font-family:var(--font-display);font-size:1.8rem;color:#fff;margin:40px 0 16px}
-    .content-box p{color:var(--text-secondary);font-size:1.05rem;line-height:1.8;margin-bottom:20px}
+    :root{
+      --bg:#03060f;--bg2:#050a17;--bg-card:rgba(10,18,38,.85);
+      --cyan:#00f0ff;--cyan-dim:rgba(0,240,255,.15);--cyan-border:rgba(0,240,255,.3);
+      --blue:#3b82f6;--violet:#8b5cf6;
+      --text:#f8fafc;--text2:#cbd5e1;--text-m:#94a3b8;
+      --border:rgba(255,255,255,.08);--border2:rgba(59,130,246,.25);
+      --font:'Inter',sans-serif;--mono:'JetBrains Mono',monospace;
+      --r:14px;--r2:20px;--r3:28px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;color-scheme:dark}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 65% 18%,rgba(37,99,235,.12) 0%,transparent 50%),radial-gradient(circle at 18% 65%,rgba(139,92,246,.08) 0%,transparent 45%),linear-gradient(to right,rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.015) 1px,transparent 1px);background-size:100% 100%,100% 100%,48px 48px,48px 48px;pointer-events:none;z-index:0}
+
+    /* Header */
+    .header{position:relative;z-index:10;background:rgba(3,6,15,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border2);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand-icon{width:42px;height:42px;background:linear-gradient(135deg,#2563eb,var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:900;color:#000;font-family:var(--mono)}
+    .brand-name{font-size:.78rem;font-weight:700;letter-spacing:.12em;color:var(--text)}
+    .brand-sub{font-size:.65rem;color:var(--text-m);letter-spacing:.08em}
+    .header-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .header-links a{color:var(--text-m);text-decoration:none;font-size:.82rem;transition:color .2s}
+    .header-links a:hover{color:var(--cyan)}
+    .btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;padding:8px 18px;border-radius:50px;font-size:.82rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:6px;transition:all .3s}
+    .btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,211,102,.3)}
+
+    /* Hero */
+    .hero{position:relative;z-index:1;padding:80px 24px 50px;text-align:center;max-width:900px;margin:0 auto}
+    .tool-tag{display:inline-block;background:var(--cyan-dim);border:1px solid var(--cyan-border);color:var(--cyan);padding:6px 16px;border-radius:50px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;margin-bottom:20px}
+    .hero h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:16px}
+    .hero h1 span{background:linear-gradient(135deg,#fff,var(--cyan) 60%,var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero p{font-size:1.05rem;color:var(--text2);max-width:650px;margin:0 auto 12px;line-height:1.75}
+    .breadcrumb{font-family:var(--mono);font-size:.78rem;color:var(--text-m);margin-bottom:28px}
+    .breadcrumb a{color:var(--cyan);text-decoration:none}
+
+    /* Calculator */
+    .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+    .calc-container{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r3);padding:40px;box-shadow:0 24px 60px rgba(0,0,0,.6);margin-bottom:60px;position:relative;z-index:1}
+    .calc-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:40px}
+    @media(max-width:860px){.calc-grid{grid-template-columns:1fr}}
+    .calc-heading{font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:24px;display:flex;align-items:center;gap:10px}
+    .calc-heading::before{content:'';display:block;width:4px;height:20px;border-radius:2px;background:linear-gradient(180deg,var(--cyan),var(--blue))}
+    .cig{margin-bottom:22px}
+    .cil{display:flex;justify-content:space-between;font-weight:600;color:#fff;font-size:.9rem;margin-bottom:8px}
+    .cil-v{color:var(--cyan);font-family:var(--mono);font-size:.88rem}
+    .slider{width:100%;height:7px;border-radius:4px;background:#1e293b;outline:none;-webkit-appearance:none;cursor:pointer}
+    .slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--blue));cursor:pointer;box-shadow:0 2px 10px rgba(0,240,255,.4);transition:transform .15s}
+    .slider::-webkit-slider-thumb:hover{transform:scale(1.2)}
+    .num-input{width:100%;background:#090d16;border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;color:#fff;font-size:1rem;font-family:var(--mono);outline:none;transition:border-color .2s}
+    .num-input:focus{border-color:var(--cyan)}
+
+    /* Results */
+    .results-card{background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(0,240,255,.06));border:1px solid var(--cyan-border);border-radius:var(--r2);padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+    .res-main{margin-bottom:4px}
+    .res-lbl{font-size:.75rem;color:var(--text-m);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;font-family:var(--mono)}
+    .res-val{font-size:2.4rem;font-weight:800;background:linear-gradient(135deg,#fff,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+    .res-sub{font-size:.85rem;color:var(--text-m);margin-top:4px}
+    .res-sub strong{color:#fff}
+    .pills{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .pill{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r);padding:14px;text-align:center}
+    .pill-v{font-weight:700;font-size:1.2rem;color:#fff}
+    .pill-l{font-size:.7rem;color:var(--text-m);margin-top:3px}
+    .pill-v.green{color:#4ade80}
+    .btn-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;padding:14px 24px;border-radius:50px;font-size:.92rem;font-weight:700;text-decoration:none;transition:all .3s;width:100%}
+    .btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,.35)}
+
+    /* Content */
+    .content-box{max-width:860px;margin:0 auto 80px;position:relative;z-index:1}
+    .content-box h2{font-size:1.6rem;color:#fff;margin:40px 0 14px;font-weight:700}
+    .content-box p{color:var(--text2);font-size:1rem;line-height:1.85;margin-bottom:18px}
+    .formula-box{background:var(--bg-card);border:1px solid var(--border2);border-radius:var(--r);padding:20px;font-family:var(--mono);color:var(--cyan);margin:20px 0;font-size:.88rem;line-height:1.8}
+
+    /* Footer */
+    .footer{background:rgba(5,10,23,.95);border-top:1px solid var(--border2);padding:40px 24px;text-align:center;position:relative;z-index:1}
+    .footer p{color:var(--text-m);font-size:.82rem;line-height:1.8}
+    .footer a{color:var(--cyan);text-decoration:none}
+    .footer a:hover{text-decoration:underline}
+    .footer-brand{font-family:var(--mono);color:var(--cyan);font-size:.75rem;letter-spacing:.12em;margin-top:10px}
+
+    /* WhatsApp Float */
+    .wa-float{position:fixed;bottom:24px;right:24px;width:52px;height:52px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:999;transition:all .3s;animation:pulse 2.5s infinite}
+    .wa-float:hover{transform:scale(1.1)}
+    @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,.7)}}
   </style>
 </head>
 <body>
 
-    <aside class="social-sidebar" aria-label="Social Profiles">
-    <a href="https://www.linkedin.com/in/seosaifullah/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    </a>
-    <a href="https://github.com/saifullahseodeveloper" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-    </a>
-    <a href="https://x.com/saifullah5152" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/saifullah0522/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-    </a>
-    <a href="https://www.facebook.com/saifullah0522/" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-    </a>
-    <a href="https://wa.me/918840432382" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-    </a>
-    <a href="mailto:md.saifullah05@gmail.com" title="Email" aria-label="Email">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-    </a>
-    <div class="follow-text">FOLLOW ME</div>
-  </aside>
-
-  <header>
-    <nav id="navbar">
-      <div class="wrap nav-inner">
-        <a href="/" class="brand-group">
-          <img src="/assets/images/logo.svg" alt="MS Logo" class="brand-logo-img">
-          <div class="brand-text">
-            <span class="name-top">MOHAMMAD</span>
-            <span class="name-bottom">SAIFULLAH</span>
-          </div>
-        </a>
-        <ul class="nav-links">
-          <li><a href="/" class="nav-link">Home</a></li>
-          <li><a href="/about/" class="nav-link">About</a></li>
-          <li><a href="/services/" class="nav-link">Services</a></li>
-          <li><a href="/case-studies/" class="nav-link">Case Studies</a></li>
-          <li><a href="/industries/" class="nav-link">Industries</a></li>
-          <li><a href="/tools/" class="nav-link active">Free Tools</a></li>
-          <li><a href="/insights/" class="nav-link">Insights</a></li>
-          <li><a href="/contact/" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a href="/contact/" class="nav-btn-talk">
-            <span>LET'S TALK</span>
-            <i data-lucide="arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="tool-hero">
-      <div class="wrap">
-        <div class="breadcrumb">
-          <a href="/">Home</a> / <a href="/tools/">Tools</a> / <span>SEO ROI Calculator</span>
-        </div>
-        <span class="section-tag">// INTERACTIVE GROWTH TOOL</span>
-        <h1>Free SEO ROI &amp; <span style="background:var(--gradient-cyan);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Revenue Growth Calculator</span></h1>
-        <p>Calculate your estimated organic traffic, inbound lead pipeline, and return on investment from ranking #1 to #3 on Google for your target commercial keywords.</p>
-      </div>
-    </section>
-
-    <div class="wrap">
-      <div class="calc-container">
-        <div class="calc-grid">
-          <!-- Inputs -->
-          <div>
-            <h3 style="color:#fff;font-family:var(--font-display);margin-bottom:24px;font-size:1.3rem">Campaign Parameters</h3>
-
-            <div class="calc-input-group">
-              <div class="calc-label">
-                <span>Monthly Search Volume (Target Keywords)</span>
-                <span id="vol-val">10,000</span>
-              </div>
-              <input type="range" id="vol-slider" class="calc-slider" min="1000" max="100000" step="1000" value="10000">
-            </div>
-
-            <div class="calc-input-group">
-              <div class="calc-label">
-                <span>Expected Page 1 Organic CTR</span>
-                <span id="ctr-val">28.5% (#1 Rank)</span>
-              </div>
-              <input type="range" id="ctr-slider" class="calc-slider" min="5" max="35" step="0.5" value="28.5">
-            </div>
-
-            <div class="calc-input-group">
-              <div class="calc-label">
-                <span>Website Conversion Rate (Visitors to Leads)</span>
-                <span id="cr-val">3.5%</span>
-              </div>
-              <input type="range" id="cr-slider" class="calc-slider" min="0.5" max="10" step="0.1" value="3.5">
-            </div>
-
-            <div class="calc-input-group">
-              <div class="calc-label">
-                <span>Average Deal / Customer Value (₹ INR)</span>
-              </div>
-              <input type="number" id="deal-val" class="calc-input" value="25000" min="1000" step="500">
-            </div>
-
-            <div class="calc-input-group">
-              <div class="calc-label">
-                <span>Sales Close Rate (% Leads that Buy)</span>
-                <span id="close-val">20%</span>
-              </div>
-              <input type="range" id="close-slider" class="calc-slider" min="5" max="60" step="1" value="20">
-            </div>
-          </div>
-
-          <!-- Output -->
-          <div class="results-card">
-            <div>
-              <div class="result-row">
-                <div class="result-label">Projected Monthly Organic Revenue</div>
-                <div class="result-value" id="res-monthly-rev">₹4,98,750</div>
-                <div class="result-sub">Annual Pipeline: <strong id="res-annual-rev" style="color:#fff">₹59.85 Lakhs / yr</strong></div>
-              </div>
-
-              <div class="metric-pills">
-                <div class="metric-pill">
-                  <div class="metric-pill-val" id="res-traffic">2,850</div>
-                  <div class="metric-pill-lbl">Monthly Organic Clicks</div>
-                </div>
-                <div class="metric-pill">
-                  <div class="metric-pill-val" id="res-leads">100</div>
-                  <div class="metric-pill-lbl">Inbound Leads / Mo</div>
-                </div>
-                <div class="metric-pill">
-                  <div class="metric-pill-val" id="res-deals">20</div>
-                  <div class="metric-pill-lbl">Closed Deals / Mo</div>
-                </div>
-                <div class="metric-pill">
-                  <div class="metric-pill-val" style="color:#4ade80" id="res-roi">16.6×</div>
-                  <div class="metric-pill-lbl">Est. ROI on ₹30k Retainer</div>
-                </div>
-              </div>
-            </div>
-
-            <a href="https://wa.me/918840432382?text=Hi%20Mohammad,%20I%20used%20your%20SEO%20ROI%20Calculator%20and%20want%20a%20custom%20ranking%20blueprint." id="calc-wa-btn" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center">
-              <span>💬 Claim This Ranking Blueprint on WhatsApp</span>
-              <i data-lucide="arrow-up-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-box">
-        <h2>How to Calculate Your Return on Investment for SEO</h2>
-        <p>Search Engine Optimization is the highest-ROI digital acquisition channel because organic search clicks carry <strong>zero marginal cost per click</strong>. Unlike Google Ads or Facebook Ads where traffic immediately stops when you pause ad spend, organic rankings continue generating qualified buyer inquiries month after month.</p>
-        <p>The mathematical formula used by enterprise growth leaders to evaluate SEO is:</p>
-        <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:12px;padding:20px;font-family:var(--font-mono);color:var(--cyan-accent);margin:20px 0">
-          Monthly SEO Revenue = (Search Volume × SERP CTR) × Website Conversion Rate × Sales Close Rate × Customer Lifetime Value
-        </div>
-        <p>By optimizing technical Core Web Vitals, building high-authority local citations, deploying Schema.org 2.0 entity graphs, and implementing sub-3-second WhatsApp routing funnels, you can predictably capture top-3 rankings and scale your bottom line.</p>
-      </div>
+<header class="header">
+  <a href="https://mohammad-saifullah.techerics.com/" class="brand" target="_blank">
+    <div class="brand-icon">MS</div>
+    <div>
+      <div class="brand-name">MOHAMMAD SAIFULLAH</div>
+      <div class="brand-sub">SEO SPECIALIST & WEB DEVELOPER</div>
     </div>
-  </main>
-
-  <a href="https://wa.me/918840432382?text=Hi%20Mohammad%20Saifullah%2C%20I%27d%20like%20to%20discuss%20SEO%20ROI" id="wa-float" target="_blank" rel="noopener" title="Chat on WhatsApp">
-    <i data-lucide="message-square"></i>
   </a>
+  <div class="header-links">
+    <a href="https://mohammad-saifullah.techerics.com/" target="_blank">Portfolio</a>
+    <a href="https://www.linkedin.com/in/seosaifullah/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/saifullahseodeveloper" target="_blank">GitHub</a>
+    <a href="https://wa.me/918840432382" target="_blank" class="btn-wa">💬 WhatsApp</a>
+  </div>
+</header>
 
-  <footer>
-    <div class="wrap">
-      <div class="foot-grid-4col">
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-            <img src="/assets/images/logo.svg" alt="MS Logo" style="width:32px;height:28px">
-            <div class="brand-text">
-              <span class="name-top" style="font-size:.88rem">MOHAMMAD</span>
-              <span class="name-bottom" style="font-size:.88rem">SAIFULLAH</span>
-            </div>
-          </div>
-          <p class="foot-bio">Digital Growth Engineer × Web Developer × SEO Specialist. High-performance websites, custom CRMs, and search ranking systems that turn visitors into clients.</p>
-          <div style="font-family:var(--font-mono);font-size:.8rem;color:var(--cyan-accent);letter-spacing:.12em;font-weight:700">BUILD • RANK • CONVERT</div>
+<div class="hero">
+  <div class="tool-tag">// INTERACTIVE SEO GROWTH TOOL</div>
+  <div class="breadcrumb"><a href="https://mohammad-saifullah.techerics.com/">Home</a> / <a href="https://mohammad-saifullah.techerics.com/tools/">Tools</a> / SEO ROI Calculator</div>
+  <h1>Free SEO ROI &amp; <span>Revenue Growth Calculator</span></h1>
+  <p>Calculate your estimated organic traffic, inbound lead pipeline, and return on investment from ranking #1–3 on Google for your target commercial keywords.</p>
+</div>
+
+<div class="wrap">
+  <div class="calc-container">
+    <div class="calc-grid">
+      <!-- Inputs -->
+      <div>
+        <div class="calc-heading">Campaign Parameters</div>
+
+        <div class="cig">
+          <div class="cil"><span>Monthly Search Volume (Target Keywords)</span><span class="cil-v" id="vol-val">10,000</span></div>
+          <input type="range" id="vol-slider" class="slider" min="1000" max="100000" step="1000" value="10000">
         </div>
-        <div>
-          <h5 class="foot-heading">Quick Links</h5>
-          <ul class="foot-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About Me</a></li>
-            <li><a href="/services/">Services</a></li>
-            <li><a href="/case-studies/">Case Studies</a></li>
-            <li><a href="/industries/">Industries</a></li>
-            <li><a href="/tools/">Free Growth Tools</a></li>
-            <li><a href="/contact/">Start a Project</a></li>
-          </ul>
+
+        <div class="cig">
+          <div class="cil"><span>Expected Page 1 Organic CTR</span><span class="cil-v" id="ctr-val">28.5%</span></div>
+          <input type="range" id="ctr-slider" class="slider" min="5" max="35" step="0.5" value="28.5">
         </div>
-        <div>
-          <h5 class="foot-heading">Services</h5>
-          <ul class="foot-links">
-            <li><a href="/services/technical-seo.html">Technical SEO</a></li>
-            <li><a href="/services/local-seo.html">Local SEO</a></li>
-            <li><a href="/services/wordpress-development.html">WordPress &amp; WooCommerce</a></li>
-            <li><a href="/services/web-development.html">Custom PHP Web Apps</a></li>
-            <li><a href="/services/cro-funnels.html">CRM &amp; Lead Funnels</a></li>
-            <li><a href="/services/digital-marketing.html">Google Ads &amp; Analytics</a></li>
-          </ul>
+
+        <div class="cig">
+          <div class="cil"><span>Website Conversion Rate (Visitors → Leads)</span><span class="cil-v" id="cr-val">3.5%</span></div>
+          <input type="range" id="cr-slider" class="slider" min="0.5" max="10" step="0.1" value="3.5">
         </div>
-        <div>
-          <h5 class="foot-heading">Get In Touch</h5>
-          <ul class="foot-links">
-            <li><a href="https://wa.me/918840432382" target="_blank">WhatsApp: +91 88404 32382</a></li>
-            <li><a href="mailto:md.saifullah05@gmail.com">md.saifullah05@gmail.com</a></li>
-            <li><span style="color:var(--text-muted)">Lucknow, India • Global Remote</span></li>
-            <li><a href="/contact/" style="color:var(--cyan-accent);font-weight:600;margin-top:6px;display:inline-block">Send Project Brief →</a></li>
-          </ul>
+
+        <div class="cig">
+          <div class="cil"><span>Average Deal / Customer Value (₹ INR)</span></div>
+          <input type="number" id="deal-val" class="num-input" value="25000" min="1000" step="500">
+        </div>
+
+        <div class="cig">
+          <div class="cil"><span>Sales Close Rate (% Leads that Buy)</span><span class="cil-v" id="close-val">20%</span></div>
+          <input type="range" id="close-slider" class="slider" min="5" max="60" step="1" value="20">
         </div>
       </div>
-      <div class="foot-bottom">
-        <span>© 2026 Mohammad Saifullah. All rights reserved.</span>
-        <span style="color:var(--cyan-accent);font-family:var(--font-mono);font-size:.8rem">Engineered for Speed, Rank &amp; Conversion</span>
+
+      <!-- Results -->
+      <div class="results-card">
+        <div class="res-main">
+          <div class="res-lbl">Projected Monthly Organic Revenue</div>
+          <div class="res-val" id="res-monthly-rev">₹4,98,750</div>
+          <div class="res-sub">Annual Pipeline: <strong id="res-annual-rev">₹59.85 Lakhs / yr</strong></div>
+        </div>
+
+        <div class="pills">
+          <div class="pill"><div class="pill-v" id="res-traffic">2,850</div><div class="pill-l">Monthly Organic Clicks</div></div>
+          <div class="pill"><div class="pill-v" id="res-leads">100</div><div class="pill-l">Inbound Leads / Mo</div></div>
+          <div class="pill"><div class="pill-v" id="res-deals">20</div><div class="pill-l">Closed Deals / Mo</div></div>
+          <div class="pill"><div class="pill-v green" id="res-roi">16.6×</div><div class="pill-l">Est. ROI on ₹30k Retainer</div></div>
+        </div>
+
+        <a href="https://wa.me/918840432382" id="calc-wa-btn" target="_blank" class="btn-cta">
+          💬 Claim This Ranking Blueprint on WhatsApp
+        </a>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="/assets/js/main.js"></script>
-  <script>
-    if (window.lucide) lucide.createIcons();
+  <div class="content-box">
+    <h2>How to Calculate Your Return on Investment for SEO</h2>
+    <p>Search Engine Optimization is the highest-ROI digital acquisition channel because organic search clicks carry <strong>zero marginal cost per click</strong>. Unlike Google Ads, organic rankings continue generating qualified buyer inquiries month after month.</p>
+    <p>The formula used by enterprise growth leaders to evaluate SEO:</p>
+    <div class="formula-box">
+      Monthly SEO Revenue = (Search Volume × SERP CTR) × Conversion Rate × Close Rate × Deal Value
+    </div>
+    <p>By optimizing technical Core Web Vitals, building high-authority local citations, and deploying Schema.org entity graphs, you can predictably capture top-3 rankings and scale your bottom line.</p>
 
-    // Calculator Logic
-    const volSlider = document.getElementById('vol-slider');
-    const ctrSlider = document.getElementById('ctr-slider');
-    const crSlider = document.getElementById('cr-slider');
-    const dealInput = document.getElementById('deal-val');
-    const closeSlider = document.getElementById('close-slider');
+    <h2>About This Tool</h2>
+    <p>Built by <a href="https://mohammad-saifullah.techerics.com/" target="_blank">Mohammad Saifullah</a>, SEO Specialist & Web Developer based in Lucknow, India. This calculator is 100% free, open-source, and requires no signup. View the source on <a href="https://github.com/saifullahseodeveloper/free-seo-roi-calculator" target="_blank">GitHub</a>.</p>
+  </div>
+</div>
 
-    function calculateSEO() {
-      const vol = parseFloat(volSlider.value);
-      const ctr = parseFloat(ctrSlider.value) / 100;
-      const cr = parseFloat(crSlider.value) / 100;
-      const deal = parseFloat(dealInput.value) || 0;
-      const close = parseFloat(closeSlider.value) / 100;
+<footer class="footer">
+  <p>Made with ❤️ by <a href="https://mohammad-saifullah.techerics.com/" target="_blank">Mohammad Saifullah</a> — SEO Specialist & Web Developer, Lucknow, India</p>
+  <p><a href="https://github.com/saifullahseodeveloper" target="_blank">GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/seosaifullah/" target="_blank">LinkedIn</a> &nbsp;·&nbsp; <a href="https://x.com/saifullah5152" target="_blank">Twitter/X</a> &nbsp;·&nbsp; <a href="mailto:md.saifullah05@gmail.com">md.saifullah05@gmail.com</a></p>
+  <div class="footer-brand">BUILD · RANK · CONVERT</div>
+</footer>
 
-      // Labels
-      document.getElementById('vol-val').textContent = vol.toLocaleString('en-IN');
-      document.getElementById('ctr-val').textContent = `${(ctr * 100).toFixed(1)}%`;
-      document.getElementById('cr-val').textContent = `${(cr * 100).toFixed(1)}%`;
-      document.getElementById('close-val').textContent = `${(close * 100).toFixed(0)}%`;
+<a href="https://wa.me/918840432382" id="wa-float" class="wa-float" target="_blank" title="Chat on WhatsApp">💬</a>
 
-      // Results
-      const clicks = Math.round(vol * ctr);
-      const leads = Math.round(clicks * cr);
-      const deals = Math.round(leads * close);
-      const monthlyRev = deals * deal;
-      const annualRev = monthlyRev * 12;
-      const estRetainer = 30000;
-      const roi = estRetainer > 0 ? (monthlyRev / estRetainer).toFixed(1) : '0';
+<script>
+  const volSlider=document.getElementById('vol-slider');
+  const ctrSlider=document.getElementById('ctr-slider');
+  const crSlider=document.getElementById('cr-slider');
+  const dealInput=document.getElementById('deal-val');
+  const closeSlider=document.getElementById('close-slider');
 
-      document.getElementById('res-traffic').textContent = clicks.toLocaleString('en-IN');
-      document.getElementById('res-leads').textContent = leads.toLocaleString('en-IN');
-      document.getElementById('res-deals').textContent = deals.toLocaleString('en-IN');
-      document.getElementById('res-monthly-rev').textContent = `₹${monthlyRev.toLocaleString('en-IN')}`;
-      
-      let annualStr = '';
-      if (annualRev >= 10000000) {
-        annualStr = `₹${(annualRev / 10000000).toFixed(2)} Cr / yr`;
-      } else if (annualRev >= 100000) {
-        annualStr = `₹${(annualRev / 100000).toFixed(2)} Lakhs / yr`;
-      } else {
-        annualStr = `₹${annualRev.toLocaleString('en-IN')} / yr`;
-      }
-      document.getElementById('res-annual-rev').textContent = annualStr;
-      document.getElementById('res-roi').textContent = `${roi}×`;
+  function calculateSEO(){
+    const vol=parseFloat(volSlider.value);
+    const ctr=parseFloat(ctrSlider.value)/100;
+    const cr=parseFloat(crSlider.value)/100;
+    const deal=parseFloat(dealInput.value)||0;
+    const close=parseFloat(closeSlider.value)/100;
 
-      // WhatsApp Dynamic CTA
-      const waBtn = document.getElementById('calc-wa-btn');
-      const waMsg = encodeURIComponent(`Hi Mohammad, I used your SEO ROI Calculator. With ${vol} searches and ${deal} deal value, my target monthly revenue is ₹${monthlyRev.toLocaleString('en-IN')}. Let's build this roadmap!`);
-      waBtn.href = `https://wa.me/918840432382?text=${waMsg}`;
-    }
+    document.getElementById('vol-val').textContent=vol.toLocaleString('en-IN');
+    document.getElementById('ctr-val').textContent=`${(ctr*100).toFixed(1)}%`;
+    document.getElementById('cr-val').textContent=`${(cr*100).toFixed(1)}%`;
+    document.getElementById('close-val').textContent=`${(close*100).toFixed(0)}%`;
 
-    [volSlider, ctrSlider, crSlider, dealInput, closeSlider].forEach(el => {
-      el.addEventListener('input', calculateSEO);
-    });
+    const clicks=Math.round(vol*ctr);
+    const leads=Math.round(clicks*cr);
+    const deals=Math.round(leads*close);
+    const monthlyRev=deals*deal;
+    const annualRev=monthlyRev*12;
+    const roi=30000>0?(monthlyRev/30000).toFixed(1):'0';
 
-    calculateSEO();
-  </script>
+    document.getElementById('res-traffic').textContent=clicks.toLocaleString('en-IN');
+    document.getElementById('res-leads').textContent=leads.toLocaleString('en-IN');
+    document.getElementById('res-deals').textContent=deals.toLocaleString('en-IN');
+    document.getElementById('res-monthly-rev').textContent=`₹${monthlyRev.toLocaleString('en-IN')}`;
+
+    let ann='';
+    if(annualRev>=10000000)ann=`₹${(annualRev/10000000).toFixed(2)} Cr / yr`;
+    else if(annualRev>=100000)ann=`₹${(annualRev/100000).toFixed(2)} Lakhs / yr`;
+    else ann=`₹${annualRev.toLocaleString('en-IN')} / yr`;
+    document.getElementById('res-annual-rev').textContent=ann;
+    document.getElementById('res-roi').textContent=`${roi}×`;
+
+    const waMsg=encodeURIComponent(`Hi Mohammad, I used your SEO ROI Calculator. With ${vol} searches and ₹${deal} deal value, my target monthly revenue is ₹${monthlyRev.toLocaleString('en-IN')}. Let's build this roadmap!`);
+    document.getElementById('calc-wa-btn').href=`https://wa.me/918840432382?text=${waMsg}`;
+    document.getElementById('wa-float').href=`https://wa.me/918840432382?text=${encodeURIComponent('Hi Mohammad, I want to discuss SEO strategy for my business.')}`;
+  }
+
+  [volSlider,ctrSlider,crSlider,dealInput,closeSlider].forEach(el=>el.addEventListener('input',calculateSEO));
+  calculateSEO();
+</script>
 </body>
 </html>
